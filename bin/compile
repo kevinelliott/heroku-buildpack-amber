@@ -54,7 +54,7 @@ CRYSTAL_DIR=/tmp/crystal
 unset GIT_DIR
 
 # Install system dependencies
-apt-get install libevent-dev
+#apt-get install libevent-dev
 
 # Install Crystal
 mkdir -p $CRYSTAL_DIR

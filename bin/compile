@@ -53,6 +53,9 @@ CRYSTAL_URL=`${CURL} https://api.github.com/repos/crystal-lang/crystal/releases/
 CRYSTAL_DIR=/tmp/crystal
 unset GIT_DIR
 
+# Install system dependencies
+apt-get install libevent
+
 # Install Crystal
 mkdir -p $CRYSTAL_DIR
 start "Installing Crystal ($CRYSTAL_VERSION $CRYSTAL_VERSION_REASON) from $CRYSTAL_URL"
